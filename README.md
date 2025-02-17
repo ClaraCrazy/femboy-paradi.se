@@ -1,6 +1,6 @@
 # Femboy Paradise Website  
 
-Welcome to the official website of **Femboy Paradise**! This site serves as the hub for our vibrant Discord community, offering information about our server, roles, games, and MechaMew bot.  
+Welcome to the official website of **Femboy Paradise**! This site serves as the hub for our vibrant [Discord community (18+)](https://discord.gg/bottom), offering information about our server, roles, games, and MechaMew bot.  
 
 ## 🌐 Live Website  
 https://femboy-paradi.se  
