@@ -14,6 +14,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   </head>
   <body>
+    <script>
+      function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("active");
+      }
+    </script>
+    <nav class="navbar">
+      <div class="container">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="https://mechamew.crazyco.xyz/">MechaMew Bot</a></li>
+          <li><a href="https://github.com/ClaraCrazy/femboy-paradi.se">Github</a></li>
+          <li><a href="https://discord.gg/bottom" target="_blank">Join Us</a></li>
+        </ul>
+      </div>
+    </nav>
     <main>
       <div class="container">
         <h1>Server Games</h1>
@@ -49,7 +67,6 @@
           <li><strong>Get game info:</strong> <code>m!mafia explain</code></li>
         </ul>
         <p>👉 <i>Will you survive the night, or will you be outwitted?</i></p>
-        <a href="index.html" class="back-button">Back to Home</a>
       </div>
     </main>
     <footer>

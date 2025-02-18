@@ -14,6 +14,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   </head>
   <body>
+    <script>
+      function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("active");
+      }
+    </script>
+    <nav class="navbar">
+      <div class="container">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="https://mechamew.crazyco.xyz/">MechaMew Bot</a></li>
+          <li><a href="https://github.com/ClaraCrazy/femboy-paradi.se">Github</a></li>
+          <li><a href="https://discord.gg/bottom" target="_blank">Join Us</a></li>
+        </ul>
+      </div>
+    </nav>
     <div class="container">
       <h1>About Femboy Paradise</h1>
       <p>Femboy Paradise is a welcoming and inclusive community built for femboys, their supporters, and those who love the culture.</p>
@@ -58,7 +76,6 @@
       </ul>
       <h2>Community Games</h2>
       <p>We offer fun games like Monopoly, Risk, Mafia, and Cards Against Humanity. Check <a href="games.html"><strong>#server-games</strong></a> for details!</p>
-      <a href="index.html" class="back-button">Back to Home</a>
     </div>
     <footer>
       <p>&copy; 2025 Femboy Paradise. All rights reserved.</p>

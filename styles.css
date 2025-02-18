@@ -87,12 +87,11 @@ a {
 	.nav-links {
 		display: none;
 		flex-direction: column;
-		background: white;
-		position: absolute;
-		top: 80px;
+		/* background: white; */
+		/* position: absolute; */
+		top: 38px;
 		left: 0;
 		width: 100%;
-		box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
 		border-radius: 15px;
 	}
 
