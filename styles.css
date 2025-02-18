@@ -32,6 +32,10 @@ p {
 	font-size: 18px;
 }
 
+a {
+	color: #6a0572;
+}
+
 .back-button {
 	display: inline-block;
 	margin-top: 20px;
