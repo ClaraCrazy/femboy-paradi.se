@@ -2,12 +2,13 @@ body {
 	font-family: Arial, sans-serif;
 	text-align: center;
 	background-image: url('icons/background.jpg');
+	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-color: #ffdaf4;
 	color: #6a0572;
-	padding: 100px;
+	padding: 10px 20px;
 }
 
 .container {
@@ -63,6 +64,21 @@ p {
 
 .join-button:hover {
 	background-color: #6d3a83;
+}
+
+@media (max-width: 768px) {
+	.back-button,
+	.join-button {
+		display: block;
+		font-size: 16px;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 .role-icons img {
