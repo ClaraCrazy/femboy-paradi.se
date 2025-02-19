@@ -1,33 +1,42 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Femboy Paradise - About</title>
+    <title>About - Femboy Paradise</title>
     <link rel="stylesheet" href="styles.css">
     <meta property="og:title" content="Femboy Paradise - About"/>
-    <meta property="og:description" content="Welcome to Femboy Paradise! A cozy, vibrant Discord community for femboys and their fans. Join us for fun chats, games, and a supportive space!">
-    <meta property="og:url" content="https://femboy-paradi.se" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:description" content="Learn more about Femboy Paradise, our mission, and our community."/>
+    <meta property="og:url" content="https://femboy-paradi.se/about" />
     <meta property="og:image" content="https://femboy-paradi.se/icons/favicon.png" />
     <link rel="icon" href="/icons/favicon.png" type="image/png" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   </head>
   <body>
     <script>
-      function toggleMenu() {
-        document.querySelector(".nav-links").classList.toggle("active");
-      }
-
-      window.addEventListener("scroll", function () {
-        if (navLinks.classList.contains("active")) {
-          document.querySelector(".nav-links").classList.remove("active");
-        }
+      document.addEventListener("DOMContentLoaded", function () {
+          const navLinks = document.querySelector(".nav-links");
+          const menuToggle = document.querySelector(".menu-toggle");
+      
+          if (navLinks) {
+              navLinks.classList.remove("active"); // Ensure it starts minimized
+          }
+      
+          // Toggle menu when clicking the button
+          menuToggle.addEventListener("click", function () {
+              navLinks.classList.toggle("active");
+          });
+      
+          // Minimize navbar when scrolling
+          window.addEventListener("scroll", function () {
+              if (navLinks.classList.contains("active")) {
+                  navLinks.classList.remove("active"); // Hide on scroll
+              }
+          });
       });
     </script>
+    
     <nav class="navbar">
-      <div class="container">
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <button class="menu-toggle">☰</button>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -36,8 +45,8 @@
           <li><a href="https://github.com/ClaraCrazy/femboy-paradi.se">Github</a></li>
           <li><a href="https://discord.gg/bottom" target="_blank">Join Us</a></li>
         </ul>
-      </div>
     </nav>
+
     <div class="container">
       <h1>About Femboy Paradise</h1>
       <p>Femboy Paradise is a welcoming and inclusive community built for femboys, their supporters, and those who love the culture.</p>
