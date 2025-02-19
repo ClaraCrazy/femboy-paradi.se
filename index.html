@@ -16,33 +16,41 @@
   </head>
   <body>
     <script>
-        function toggleMenu() {
+      document.addEventListener("DOMContentLoaded", function () {
           const navLinks = document.querySelector(".nav-links");
+          const menuToggle = document.querySelector(".menu-toggle");
+      
           if (navLinks) {
-            navLinks.classList.toggle("active");
+              navLinks.classList.remove("active"); // Ensure it starts minimized
           }
-        }
-
-        window.addEventListener("scroll", () => {
-          const navLinks = document.querySelector(".nav-links");
-          if (navLinks && navLinks.classList.contains("active")) {
-            navLinks.classList.remove("active");
-          }
-        });
-    </script>
-    <nav class="navbar">
-      <div class="container">
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="games.html">Games</a></li>
-          <li><a href="https://mechamew.crazyco.xyz/">MechaMew Bot</a></li>
-          <li><a href="https://github.com/ClaraCrazy/femboy-paradi.se">Github</a></li>
-          <li><a href="https://discord.gg/bottom" target="_blank">Join Us</a></li>
-        </ul>
-      </div>
-    </nav>
+      
+          // Toggle menu when clicking the button
+          menuToggle.addEventListener("click", function () {
+              navLinks.classList.toggle("active");
+          });
+      
+          // Minimize navbar when scrolling
+          window.addEventListener("scroll", function () {
+              if (navLinks.classList.contains("active")) {
+                  navLinks.classList.remove("active"); // Hide on scroll
+              }
+          });
+      });
+      </script>
+      
+      
+      <nav class="navbar">
+        <button class="menu-toggle">☰</button>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="https://mechamew.crazyco.xyz/">MechaMew Bot</a></li>
+            <li><a href="https://github.com/ClaraCrazy/femboy-paradi.se">Github</a></li>
+            <li><a href="https://discord.gg/bottom" target="_blank">Join Us</a></li>
+          </ul>
+        </div>
+      </nav>     
     <div class="container">
       <h1>Welcome to Femboy Paradise!</h1>
       <p>Step into a warm and inclusive space where femboys, admirers, and friends come together to chat, share, and have fun! Our server is built on a foundation of positivity, self-expression, and community. Whether you're looking to make friends, share your favorite outfits, or just chill, this is the place for you.</p>

@@ -1,33 +1,42 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Femboy Paradise - Games</title>
+    <title>About - Femboy Paradise</title>
     <link rel="stylesheet" href="styles.css">
-    <meta property="og:title" content="Femboy Paradise - Games"/>
-    <meta property="og:description" content="Welcome to Femboy Paradise! A cozy, vibrant Discord community for femboys and their fans. Join us for fun chats, games, and a supportive space!">
-    <meta property="og:url" content="https://femboy-paradi.se" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Femboy Paradise - About"/>
+    <meta property="og:description" content="Learn more about Femboy Paradise, our mission, and our community."/>
+    <meta property="og:url" content="https://femboy-paradi.se/about" />
     <meta property="og:image" content="https://femboy-paradi.se/icons/favicon.png" />
     <link rel="icon" href="/icons/favicon.png" type="image/png" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   </head>
   <body>
     <script>
-      function toggleMenu() {
-        document.querySelector(".nav-links").classList.toggle("active");
-      }
-
-      window.addEventListener("scroll", function () {
-        if (navLinks.classList.contains("active")) {
-          document.querySelector(".nav-links").classList.remove("active");
-        }
+      document.addEventListener("DOMContentLoaded", function () {
+          const navLinks = document.querySelector(".nav-links");
+          const menuToggle = document.querySelector(".menu-toggle");
+      
+          if (navLinks) {
+              navLinks.classList.remove("active"); // Ensure it starts minimized
+          }
+      
+          // Toggle menu when clicking the button
+          menuToggle.addEventListener("click", function () {
+              navLinks.classList.toggle("active");
+          });
+      
+          // Minimize navbar when scrolling
+          window.addEventListener("scroll", function () {
+              if (navLinks.classList.contains("active")) {
+                  navLinks.classList.remove("active"); // Hide on scroll
+              }
+          });
       });
     </script>
+    
     <nav class="navbar">
-      <div class="container">
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <button class="menu-toggle">☰</button>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -36,47 +45,46 @@
           <li><a href="https://github.com/ClaraCrazy/femboy-paradi.se">Github</a></li>
           <li><a href="https://discord.gg/bottom" target="_blank">Join Us</a></li>
         </ul>
-      </div>
     </nav>
-    <main>
-      <div class="container">
-        <h1>Server Games</h1>
-        <p>Welcome to the <b>Server Games Hub!</b> Here, you can find a variety of interactive games to play with fellow members of the community. Whether you want to strategize, joke around, or conquer the world, there's something for everyone!</p>
-        <hr>
-        <h2>🃏 Cards Against Humanity (CAH)</h2>
-        <p>Enjoy the classic, dark-humored card game <b>Cards Against Humanity</b> with your server friends! Match hilarious responses to prompts and see who has the best (or worst) sense of humor.</p>
-        <ul>
-          <li><strong>Start a game:</strong> <code>m!cah</code></li>
-          <li><strong>List all available packs:</strong> <code>m!cah list</code></li>
-        </ul>
-        <p>👉 <i>Be prepared for laughter, absurdity, and total chaos!</i></p>
-        <hr>
-        <h2>🗺️ Risk - Dominate the World!</h2>
-        <p>In <b>Risk</b>, you battle for territory, expand your empire, and aim to rule the server’s battlefield. This strategy-based game requires cunning moves, alliances, and a thirst for victory!</p>
-        <ul>
-          <li><strong>Start a game:</strong> <code>m!risk</code></li>
-          <li><strong>View the map:</strong> <code>m!risk map</code></li>
-        </ul>
-        <p>👉 <i>Are you ready to become the ultimate conqueror?</i></p>
-        <hr>
-        <h2>🏦 Monopoly - The Ultimate Business Tycoon Game</h2>
-        <p>Buy, sell, and trade your way to riches in <b>Monopoly</b>! This classic game of strategy and luck lets you experience the thrill of owning it all.</p>
-        <ul>
-          <li><strong>Start a game:</strong> <code>m!monopoly</code></li>
-        </ul>
-        <p>👉 <i>Bankrupt your friends and dominate the economy!</i></p>
-        <hr>
-        <h2>🔪 Mafia - Deception & Strategy</h2>
-        <p>The <b>Mafia game</b> is a thrilling social deduction game where players take on different roles. The goal? Eliminate the Mafia or deceive everyone and take over!</p>
-        <ul>
-          <li><strong>Start a game:</strong> <code>m!mafia</code></li>
-          <li><strong>Get game info:</strong> <code>m!mafia explain</code></li>
-        </ul>
-        <p>👉 <i>Will you survive the night, or will you be outwitted?</i></p>
-      </div>
-    </main>
-    <footer>
-      <p>&copy; 2025 Femboy Paradise. All rights reserved.</p>
-    </footer>
-  </body>
+
+    <div class="container">
+      <h1>Server Games</h1>
+      <p>Welcome to the <b>Server Games Hub!</b> Here, you can find a variety of interactive games to play with fellow members of the community. Whether you want to strategize, joke around, or conquer the world, there's something for everyone!</p>
+      <hr>
+      <h2>🃏 Cards Against Humanity (CAH)</h2>
+      <p>Enjoy the classic, dark-humored card game <b>Cards Against Humanity</b> with your server friends! Match hilarious responses to prompts and see who has the best (or worst) sense of humor.</p>
+      <ul>
+        <li><strong>Start a game:</strong> <code>m!cah</code></li>
+        <li><strong>List all available packs:</strong> <code>m!cah list</code></li>
+      </ul>
+      <p>👉 <i>Be prepared for laughter, absurdity, and total chaos!</i></p>
+      <hr>
+      <h2>🗺️ Risk - Dominate the World!</h2>
+      <p>In <b>Risk</b>, you battle for territory, expand your empire, and aim to rule the server’s battlefield. This strategy-based game requires cunning moves, alliances, and a thirst for victory!</p>
+      <ul>
+        <li><strong>Start a game:</strong> <code>m!risk</code></li>
+        <li><strong>View the map:</strong> <code>m!risk map</code></li>
+      </ul>
+      <p>👉 <i>Are you ready to become the ultimate conqueror?</i></p>
+      <hr>
+      <h2>🏦 Monopoly - The Ultimate Business Tycoon Game</h2>
+      <p>Buy, sell, and trade your way to riches in <b>Monopoly</b>! This classic game of strategy and luck lets you experience the thrill of owning it all.</p>
+      <ul>
+        <li><strong>Start a game:</strong> <code>m!monopoly</code></li>
+      </ul>
+      <p>👉 <i>Bankrupt your friends and dominate the economy!</i></p>
+      <hr>
+      <h2>🔪 Mafia - Deception & Strategy</h2>
+      <p>The <b>Mafia game</b> is a thrilling social deduction game where players take on different roles. The goal? Eliminate the Mafia or deceive everyone and take over!</p>
+      <ul>
+        <li><strong>Start a game:</strong> <code>m!mafia</code></li>
+        <li><strong>Get game info:</strong> <code>m!mafia explain</code></li>
+      </ul>
+      <p>👉 <i>Will you survive the night, or will you be outwitted?</i></p>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Femboy Paradise. All rights reserved.</p>
+  </footer>
+</body>
 </html>
