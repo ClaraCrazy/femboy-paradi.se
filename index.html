@@ -16,16 +16,19 @@
   </head>
   <body>
     <script>
-      function toggleMenu() {
-        document.querySelector(".nav-links").classList.toggle("active");
-      }
-
-      window.addEventListener("scroll", function () {
-        const navLinks = document.querySelector(".nav-links");
-        if (navLinks.classList.contains("active")) {
-          navLinks.classList.remove("active");
+        function toggleMenu() {
+          const navLinks = document.querySelector(".nav-links");
+          if (navLinks) {
+            navLinks.classList.toggle("active");
+          }
         }
-      });
+
+        window.addEventListener("scroll", () => {
+          const navLinks = document.querySelector(".nav-links");
+          if (navLinks && navLinks.classList.contains("active")) {
+            navLinks.classList.remove("active");
+          }
+        });
     </script>
     <nav class="navbar">
       <div class="container">
