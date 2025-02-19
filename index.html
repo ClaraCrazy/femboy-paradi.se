@@ -16,19 +16,28 @@
   </head>
   <body>
     <script>
-        function toggleMenu() {
+      let scrolling = false;
+
+      function toggleMenu() {
           const navLinks = document.querySelector(".nav-links");
           if (navLinks) {
             navLinks.classList.toggle("active");
           }
-        }
+          scrolling = true;
+      }
 
-        window.addEventListener("scroll", () => {
-          const navLinks = document.querySelector(".nav-links");
-          if (navLinks && navLinks.classList.contains("active")) {
-            navLinks.classList.remove("active");
-          }
-        });
+      window.addEventListener("scroll", () => {
+        if (!scrolling)
+        {
+           const navLinks = document.querySelector(".nav-links");
+           navLinks.classList.add("active");
+           scrolling = true;
+        }
+      });
+
+      addEventListener("scrollend", () => {
+        scrolling = false;
+      });
     </script>
     <nav class="navbar">
       <div class="container">
