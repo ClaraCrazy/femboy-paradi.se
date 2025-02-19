@@ -20,7 +20,9 @@
       }
 
       window.addEventListener("scroll", function () {
-        document.querySelector(".nav-links").classList.remove("active");
+        if (navLinks.classList.contains("active")) {
+          document.querySelector(".nav-links").classList.remove("active");
+        }
       });
     </script>
     <nav class="navbar">
