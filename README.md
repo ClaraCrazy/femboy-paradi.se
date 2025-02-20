@@ -3,19 +3,19 @@
 Welcome to the official website of **Femboy Paradise**! This site serves as the hub for our vibrant [Discord community (18+)](https://discord.gg/bottom), offering information about our server, roles, games, and MechaMew bot.  
 
 ## 🌐 Live Website  
-https://femboy-paradi.se  
+https://femboy-paradi.se/
 
 ## 📂 Features  
 - **Home Page** – Introduction to Femboy Paradise and what we offer.  
 - **About Page** – Detailed breakdown of roles, channels, and community guidelines.  
-- **Games Page** – Information on the server’s custom games (Monopoly, Conquest, Mafia, and CAH).  
+- **Games Page** – Information on the server’s custom games (Monopoly, Risk, Mafia, and Cards afainst Humanity).
 - **Bot Integration** – Links to the Dashboard of our custom bot, MechaMew
 
 ## 🛠️ Setup  
 To run the site locally:  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/crazyco-xyz/femboy-paradise.git
+   git clone https://github.com/ClaraCrazy/femboy-paradise.git
    ```  
 2. Open `index.html` in a browser.  
 
