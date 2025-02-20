@@ -16,16 +16,16 @@
       document.addEventListener("DOMContentLoaded", function () {
           const navLinks = document.querySelector(".nav-links");
           const menuToggle = document.querySelector(".menu-toggle");
-      
+
           if (navLinks) {
               navLinks.classList.remove("active"); // Ensure it starts minimized
           }
-      
+
           // Toggle menu when clicking the button
           menuToggle.addEventListener("click", function () {
               navLinks.classList.toggle("active");
           });
-      
+
           // Minimize navbar when scrolling
           window.addEventListener("scroll", function () {
               if (navLinks.classList.contains("active")) {
@@ -34,19 +34,18 @@
           });
       });
     </script>
-    
     <nav class="navbar">
       <button class="menu-toggle">☰</button>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="games.html">Games</a></li>
-          <li><a href="https://mechamew.crazyco.xyz" target="_blank">MechaMew Bot</a></li>
-          <li><a href="https://github.com/ClaraCrazy/femboy-paradi.se" target="_blank">Github</a></li>
-          <li><a href="https://discord.gg/bottom" target="_blank">Join Us</a></li>
-        </ul>
+      <div class="navbar-title">Games</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="https://mechamew.crazyco.xyz" target="_blank">MechaMew Bot</a></li>
+        <li><a href="https://github.com/ClaraCrazy/femboy-paradi.se" target="_blank">Github</a></li>
+        <li><a href="https://discord.gg/bottom" target="_blank">Join Us</a></li>
+      </ul>
     </nav>
-
     <div class="container">
       <h1>Server Games</h1>
       <p>Welcome to the <b>Server Games Hub!</b> Here, you can find a variety of interactive games to play with fellow members of the community. Whether you want to strategize, joke around, or conquer the world, there's something for everyone!</p>

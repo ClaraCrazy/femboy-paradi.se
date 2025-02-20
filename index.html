@@ -19,16 +19,16 @@
       document.addEventListener("DOMContentLoaded", function () {
           const navLinks = document.querySelector(".nav-links");
           const menuToggle = document.querySelector(".menu-toggle");
-      
+
           if (navLinks) {
               navLinks.classList.remove("active"); // Ensure it starts minimized
           }
-      
+
           // Toggle menu when clicking the button
           menuToggle.addEventListener("click", function () {
               navLinks.classList.toggle("active");
           });
-      
+
           // Minimize navbar when scrolling
           window.addEventListener("scroll", function () {
               if (navLinks.classList.contains("active")) {
@@ -36,62 +36,61 @@
               }
           });
       });
-      </script>
-      
-      
-      <nav class="navbar">
-        <button class="menu-toggle">☰</button>
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="games.html">Games</a></li>
-            <li><a href="https://mechamew.crazyco.xyz/" target="_blank">MechaMew Bot</a></li>
-            <li><a href="https://github.com/ClaraCrazy/femboy-paradi.se" target="_blank">Github</a></li>
-            <li><a href="https://discord.gg/bottom" target="_blank">Join Us</a></li>
-          </ul>
-        </div>
-      </nav>     
-    <div class="container">
-      <h1>Welcome to Femboy Paradise!</h1>
-      <p>Step into a warm and inclusive space where femboys, admirers, and friends come together to chat, share, and have fun! Our server is built on a foundation of positivity, self-expression, and community. Whether you're looking to make friends, share your favorite outfits, or just chill, this is the place for you.</p>
-      <h2>🌸 What We Offer 🌸</h2>
-      <ul>
-        <li><strong>A Welcoming Community:</strong> We celebrate femboys and their supporters! Everyone is welcome, as long as you respect the rules and each other.</li>
-        <li><strong>Social Center:</strong> A place to share your selfies, introduce yourself, find friends, and even vent when needed.</li>
-        <li><strong>Style Guides:</strong> Discuss and showcase your favorite fashion styles, get tips, and inspire others!</li>
-        <li><strong>Fun and Games:</strong> We offer multiple server-integrated games like Monopoly, Risk, Mafia, and Cards Against Humanity!</li>
-        <li><strong>Custom Bot – MechaMew:</strong> Our custom-built bot helps manage the server while providing entertainment, utility commands, and interactive features.</li>
+    </script>
+    <nav class="navbar">
+      <button class="menu-toggle">☰</button>
+      <div class="navbar-title">Home</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="https://mechamew.crazyco.xyz/" target="_blank">MechaMew Bot</a></li>
+        <li><a href="https://github.com/ClaraCrazy/femboy-paradi.se" target="_blank">Github</a></li>
+        <li><a href="https://discord.gg/bottom" target="_blank">Join Us</a></li>
       </ul>
-      <h2>🎭 Roles & Progression 🎭</h2>
-      <p>Our server has a unique role system that rewards activity and engagement. Here’s how it works:</p>
-      <ul>
-        <li><strong>🎀 Unverified:</strong> New members start here with limited access. Verify yourself to unlock the full experience!</li>
-        <li><strong>💖 Blushy Babe:</strong> Our verified members get access to the server, joining the fun in all public channels.</li>
-        <li><strong>✨ Cherished Cutie:</strong> Trusted members who reach Level 5 gain access to the Social Center.</li>
-        <li><strong>👑 Peachy Prince:</strong> Our lovely moderators ensure the server stays a fun and safe place.</li>
-        <li><strong>💎 Satin Sweetheart:</strong> Verification managers who oversee new member verification.</li>
-        <li><strong>🛠️ Dreamy Developer:</strong> The team behind our custom bot, MechaMew.</li>
-        <li><strong>🚀 Admirable Admin:</strong> The ones handling server management and major decisions.</li>
-        <li><strong>🌟 Ethereal Enigma:</strong> Our beloved bot, MechaMew, making everything run smoothly.</li>
-      </ul>
-      <h2>🤖 Meet MechaMew – Our Custom Bot! 🤖</h2>
-      <p>MechaMew is our dedicated bot, bringing utility, moderation, and entertainment all in one. She helps keep things organized and fun with features like:</p>
-      <ul>
-        <li><strong>Moderation:</strong> Automatic rule enforcement, logging, and security features.</li>
-        <li><strong>Leveling System:</strong> Gain XP and level up just by chatting! Use <code>m!profile</code> or <code>m!lvl</code> to check your progress.</li>
-        <li><strong>Games:</strong> Play Monopoly, Mafia, Cards Against Humanity, and more!</li>
-        <li><strong>Server Stats:</strong> View live stats with <code>m!guildstats graphic</code>.</li>
-        <li><strong>Customization:</strong> Personalize your profile using <code>m!lvlset</code>, <code>m!setprofile</code>, or <code>m!mypf</code>.</li>
-      </ul>
-      <h2>🚀 Join the Fun! 🚀</h2>
-      <p>Come be a part of Femboy Paradise and enjoy a fun, inclusive space where you can be yourself. Whether you're here to chat, make friends, or play games, there's a place for you here. Don't forget to verify and grab your roles to access everything!</p>
-      <p><em>Welcome to your new favorite corner of the internet! 💕</em></p>
-      <div class="nav" style="display: flex;align-content: space-evenly;justify-content: space-around;">
-        <a href="https://discord.gg/bottom" target="_blank" class="join-button">Join the Server (18+)</a>
-      </div>
     </div>
-    <footer>
-      <p>&copy; 2025 Femboy Paradise. All rights reserved.</p>
-    </footer>
-  </body>
+  </nav>
+  <div class="container">
+    <h1>Welcome to Femboy Paradise!</h1>
+    <p>Step into a warm and inclusive space where femboys, admirers, and friends come together to chat, share, and have fun! Our server is built on a foundation of positivity, self-expression, and community. Whether you're looking to make friends, share your favorite outfits, or just chill, this is the place for you.</p>
+    <h2>🌸 What We Offer 🌸</h2>
+    <ul>
+      <li><strong>A Welcoming Community:</strong> We celebrate femboys and their supporters! Everyone is welcome, as long as you respect the rules and each other.</li>
+      <li><strong>Social Center:</strong> A place to share your selfies, introduce yourself, find friends, and even vent when needed.</li>
+      <li><strong>Style Guides:</strong> Discuss and showcase your favorite fashion styles, get tips, and inspire others!</li>
+      <li><strong>Fun and Games:</strong> We offer multiple server-integrated games like Monopoly, Risk, Mafia, and Cards Against Humanity!</li>
+      <li><strong>Custom Bot – MechaMew:</strong> Our custom-built bot helps manage the server while providing entertainment, utility commands, and interactive features.</li>
+    </ul>
+    <h2>🎭 Roles & Progression 🎭</h2>
+    <p>Our server has a unique role system that rewards activity and engagement. Here’s how it works:</p>
+    <ul>
+      <li><strong>🎀 Unverified:</strong> New members start here with limited access. Verify yourself to unlock the full experience!</li>
+      <li><strong>💖 Blushy Babe:</strong> Our verified members get access to the server, joining the fun in all public channels.</li>
+      <li><strong>✨ Cherished Cutie:</strong> Trusted members who reach Level 5 gain access to the Social Center.</li>
+      <li><strong>👑 Peachy Prince:</strong> Our lovely moderators ensure the server stays a fun and safe place.</li>
+      <li><strong>💎 Satin Sweetheart:</strong> Verification managers who oversee new member verification.</li>
+      <li><strong>🛠️ Dreamy Developer:</strong> The team behind our custom bot, MechaMew.</li>
+      <li><strong>🚀 Admirable Admin:</strong> The ones handling server management and major decisions.</li>
+      <li><strong>🌟 Ethereal Enigma:</strong> Our beloved bot, MechaMew, making everything run smoothly.</li>
+    </ul>
+    <h2>🤖 Meet MechaMew – Our Custom Bot! 🤖</h2>
+    <p>MechaMew is our dedicated bot, bringing utility, moderation, and entertainment all in one. She helps keep things organized and fun with features like:</p>
+    <ul>
+      <li><strong>Moderation:</strong> Automatic rule enforcement, logging, and security features.</li>
+      <li><strong>Leveling System:</strong> Gain XP and level up just by chatting! Use <code>m!profile</code> or <code>m!lvl</code> to check your progress.</li>
+      <li><strong>Games:</strong> Play Monopoly, Mafia, Cards Against Humanity, and more!</li>
+      <li><strong>Server Stats:</strong> View live stats with <code>m!guildstats graphic</code>.</li>
+      <li><strong>Customization:</strong> Personalize your profile using <code>m!lvlset</code>, <code>m!setprofile</code>, or <code>m!mypf</code>.</li>
+    </ul>
+    <h2>🚀 Join the Fun! 🚀</h2>
+    <p>Come be a part of Femboy Paradise and enjoy a fun, inclusive space where you can be yourself. Whether you're here to chat, make friends, or play games, there's a place for you here. Don't forget to verify and grab your roles to access everything!</p>
+    <p><em>Welcome to your new favorite corner of the internet! 💕</em></p>
+    <div class="nav" style="display: flex;align-content: space-evenly;justify-content: space-around;">
+      <a href="https://discord.gg/bottom" target="_blank" class="join-button">Join the Server (18+)</a>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 Femboy Paradise. All rights reserved.</p>
+  </footer>
+</body>
 </html>

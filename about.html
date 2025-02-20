@@ -16,16 +16,16 @@
       document.addEventListener("DOMContentLoaded", function () {
           const navLinks = document.querySelector(".nav-links");
           const menuToggle = document.querySelector(".menu-toggle");
-      
+
           if (navLinks) {
               navLinks.classList.remove("active"); // Ensure it starts minimized
           }
-      
+
           // Toggle menu when clicking the button
           menuToggle.addEventListener("click", function () {
               navLinks.classList.toggle("active");
           });
-      
+
           // Minimize navbar when scrolling
           window.addEventListener("scroll", function () {
               if (navLinks.classList.contains("active")) {
@@ -34,19 +34,18 @@
           });
       });
     </script>
-    
     <nav class="navbar">
       <button class="menu-toggle">☰</button>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="games.html">Games</a></li>
-          <li><a href="https://mechamew.crazyco.xyz/" target="_blank">MechaMew Bot</a></li>
-          <li><a href="https://github.com/ClaraCrazy/femboy-paradi.se" target="_blank">Github</a></li>
-          <li><a href="https://discord.gg/bottom" target="_blank">Join Us</a></li>
-        </ul>
+      <div class="navbar-title">About</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="https://mechamew.crazyco.xyz/" target="_blank">MechaMew Bot</a></li>
+        <li><a href="https://github.com/ClaraCrazy/femboy-paradi.se" target="_blank">Github</a></li>
+        <li><a href="https://discord.gg/bottom" target="_blank">Join Us</a></li>
+      </ul>
     </nav>
-
     <div class="container">
       <h1>About Femboy Paradise</h1>
       <p>Femboy Paradise is a welcoming and inclusive community built for femboys, their supporters, and those who love the culture.</p>
