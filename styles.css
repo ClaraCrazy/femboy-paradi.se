@@ -135,6 +135,10 @@ body {
 	height: 32px;
 	margin-top: 10px;
 }
+.role-icons-small img {
+	width: 20px;
+	height: 20px;
+}
 /* Headings */
 h1, h2, h3 {
     color: #d63384;
